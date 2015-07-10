@@ -1,6 +1,4 @@
 #include "stdafx.h"
-#include "Server.h"
-
 
 Server::Server()
 {
@@ -66,14 +64,7 @@ void Server::running()
 		}
 
 		//TODO: 插入处理TCP连接模块
-		/*HANDLE hThread;
-		hThread = CreateThread(NULL, 0, &Server::Deal, (LPVOID)client_socket, 0, NULL);
-		if (hThread == NULL)
-		{
-			puts("Create Thread Error!");
-			closesocket(client_socket);
-			break;
-		}*/
+		TCPconnect::beginConnect(client_socket);
 	}
 }
 

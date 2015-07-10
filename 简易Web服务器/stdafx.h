@@ -11,3 +11,6 @@
 #include <Windows.h>
 #include <string>
 #include <stdlib.h>
+
+#include "Server.h"
+#include "TCPconnect.h"
