@@ -1,0 +1,319 @@
+@charset "utf-8";
+
+
+*{
+	padding:0px;
+	text-decoration:none;
+	text-align:center;
+	margin:0px;
+	border-style:none;
+	border-width:1px;
+	list-style:none;
+}
+
+body{
+	width:1024px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/*top*/
+#topdiv {
+	width:1024px;
+	height:162px;
+}
+
+#logodiv {
+	background-color:white;
+	border-style:solid;
+	width:160px;
+	height:160px;
+}
+
+#headmenudiv {
+	position:relative;
+	left:10px;
+	width:850px;
+	height:162px;
+}
+
+#headmenu{
+	vertical-align:middle;
+	display:block;
+	width:840px;
+	height:60px;
+	background-color:skyblue;
+	margin-left:auto;
+	margin-right:auto;
+	list-style:none;
+}
+
+#headmenu li a{
+	width:100px;
+	height:30px;
+	margin-top:5px;
+	margin-left:15px;
+	float:left;
+	padding-top:20px;
+	background-image:url(board2.jpg);
+}
+
+/*content*/
+#bodydiv{
+	width:1024px;
+	height:1000px;
+	margin-top:20px;
+}
+
+
+/*left*/
+#leftdiv{
+	float:left;
+	width:630px;
+	height:1000px;
+}
+
+#picnews{
+	width:600px;
+	margin:auto;
+	height:40px;
+	padding-top:344px;
+	background-image:url(news1.jpg);
+}
+
+#news{
+	width:600px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:30px;
+
+}
+
+#schoolnews{
+	float:left;
+	width:280px;
+	height:300px;
+}
+
+
+#classnews{
+	float:left;
+	width:280px;
+	height:300px;
+	margin-left:40px;
+}
+
+
+#titleli1{
+	width:280px;
+	height:40px;
+	text-align:left;
+	text-indent:40px;
+	padding-top:15px;
+	background-image:url(titleli1.jpg);
+	background-repeat:no-repeat;
+}
+
+
+#titleli2{
+	width:280px;
+	height:40px;
+	text-indent:40px;
+	text-align:left;
+	padding-top:15px;
+	background-image:url(titleli2.jpg);
+	background-repeat:no-repeat;
+}
+
+.newsli{
+	width:260px;
+	height:20px;
+	padding-left:20px;
+	border-bottom-style:dotted;
+	border-bottom-width:1px;
+	border-bottom-color:gray;
+	float:right;
+	padding-top:20px;
+	text-align:left;
+	background-image:url(listbg.jpg);
+}
+
+.firstnews div{
+	width:200px;
+	height:100px;
+	float:left;
+	text-align:left;
+	text-decoration:underline;
+}
+
+.firstnews img{
+	width:70px;
+	height:100px;
+	float:left;
+}
+
+#picnews li{
+	list-style:none;
+	width:20px;
+	height:20px;
+	float:right;
+	border-style:solid;
+	border-width:1px;
+	border-color:black;
+	margin:5px;
+	background-color:white;
+}
+
+
+/*right*/
+
+#rightdiv{
+	float:left;
+	width:350px;
+	height:1000px;
+	border-left-style:dotted;
+	border-left-width:1px;
+	border-left-color:gray;
+	padding-left:23px;
+}
+
+#search{
+	width:350px;
+	height:40px;
+	background-image:url(base.gif);
+	background-position:0px 212px;
+}
+
+#searchtext{
+	margin-top:5px;
+	width:277px;
+	height:30px;
+	float:left;
+	background-color:transparent;
+	text-align:left;
+	color:gray;
+	font-size:20px;
+}
+
+#searchsubmit{
+	width:43px;
+	height:40px;
+	background-color:transparent;
+	float:left;
+}
+
+#birthday{
+	margin-top:30px;
+	width:350px;
+	height:100px;
+}
+
+#birth{
+	padding-top:5px;
+	width:39px;
+	height:95px;
+	font-size:20px;
+	float:left;
+	background-color:royalblue;
+}
+
+#recent{
+	width:280px;
+	height:100px;
+	float:left;
+	margin-left:3px;
+	background-color:skyblue;
+}
+
+#recent li{
+	width:100%;
+	list-style-type:none;
+	border-bottom-style:dotted;
+	border-width:1px;
+	padding-top:4px;
+}
+
+h1{
+	font-size:30px;
+}
+
+h2{
+	font-size:25px;
+}
+
+h3{
+	font-size:15px;
+}
+
+/*bottom*/
+#time {
+	background-position:center;
+	position:fixed;
+	
+	width:1024px;
+	bottom:10px;
+	background-image:url(timebgimg.jpg);
+}
+
+#totop{
+	position:fixed;
+	bottom:28px;
+	right:10px;
+	z-index:999;
+	width:71px;
+	height:20px;
+	cursor:pointer;
+	background-image:url(toTop.gif);
+	padding-top:50px;
+}
+
+#bottomdiv{
+	clear:left;
+	display:block;
+	width:1024px;
+	height:400px;
+	margin-top:50px;
+	border-top-style:solid;
+	
+}
+
+#friendlink{
+	width:904px;
+	height:30px;
+	background-image:url(bar.jpg);
+	padding-left:120px;
+	text-align:left;
+	font-family:黑体;
+	font-size:30px;
+}
+
+.outlink{
+	width:280px;
+	height:64px;
+	float:left;
+	margin-left:50px;
+	margin-top:30px;
+	border-style:solid;
+	background-repeat:no-repeat;
+
+}
+
+.fl{
+	float:left;
+}
+
+
+.border{
+	border-style:solid;
+	border-width:1px;
+	border-color:black;
+}
+
+.noliststyle{
+	list-style-type:none;
+}
+
+a:link {color:black;}		/* 未被访问的链接 */
+a:visited {color:black;}	/* 已被访问的链接 */
+a:hover {color:red;}	/* 鼠标指针移动到链接上 */
+a:active {color:#0000FF;}	/* 正在被点击的链接 */

@@ -1,0 +1,53 @@
+<!--jQuery 效果 - 动画
+$(selector).animate({params},speed,callback);
+必需的 params 参数定义形成动画的 CSS 属性。
+可选的 speed 参数规定效果的时长。它可以取以下值："slow"、"fast" 或毫秒。
+可选的 callback 参数是动画完成后所执行的函数名称。
+默认地，所有 HTML 元素都有一个静态位置，且无法移动。如需对位置进行操作，要记得首先把元素的 CSS position 属性设置为 relative、fixed 或 absolute！
+必须使用 Camel 标记法书写所有的属性名，比如，必须使用 paddingLeft 而不是 padding-left，使用 marginRight 而不是 margin-right，等等。同时，色彩动画并不包含在
+		核心 jQuery 库中。如果需要生成颜色动画，您需要从 jQuery.com 下载 Color Animations 插件。
+也可以定义相对值（该值相对于元素的当前值）。需要在值的前面加上 += 或 -=：甚至可以把属性的动画值设置为 "show"、"hide" 或 "toggle"：
+jQuery 提供针对动画的队列功能。这意味着如果您在彼此之后编写多个 animate() 调用，jQuery 会创建包含这些方法调用的“内部”队列。然后逐一运行这些 animate 调用。
+-->
+<html>
+	<head>
+		<title>动画</title>
+		<script src="jQuery.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("button").click(function(){
+					$("div").animate({
+						top:'+=30px',//单引号，逗号
+						left:'+=100px',
+						fontSize:'3em'
+						},1000);
+					$("div").animate({
+						top:'160px',
+						left:'0px',
+						fontSize:'6em'
+					},2000);
+					$("div").animate({
+						top:'90px',
+						left:'100px',
+						fontSize:'3em'
+					},2000);
+					$("div").animate({
+						top:'-=30px',
+						left:'-=100px',
+						fontSize:'1em'
+						},1000);
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<button style="width:50px;height:50px;">
+		开始动画
+		</button>
+		<div style="position:fixed;width:100px;height:100px;background-color:green;top:60px;">
+			jQuery
+		</div>
+       <a href = "classweb/main.htm"> 班级网站</a>
+       <a href = "music.mp3"> 音乐 </a>
+	</body>
+</html>
