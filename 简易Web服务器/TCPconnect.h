@@ -15,7 +15,6 @@ private:
 	static const int buffer_size_1K = 1 << 10;//1KB
 	static const int buffer_size_32K = 1 << 15;//32KB
 	static const int default_buffer_size = buffer_size_32K;
-	static const int send_limit = 1 << 20;//设置1M为阈值，超过1M将使用206
 
 public:
 	TCPconnect();
@@ -37,6 +36,7 @@ private:
 	// 请求头部的参数设为默认值
 	void set_default();
 	void response_OK();
+	void response_OK(const char* mEntity);
 	void response_Error(string error_no, string error_descript, string error_msg);
 	void response_Part_Content();//返回是否传输完所有文件
 	void response_Not_Modified();
@@ -58,6 +58,7 @@ private:
 	string if_modified_since;
 	//POST方法
 	int content_length;
+	string entity;
 //---------------- reponse  ----------------//
 	char *response_buffer;//响应报文的buffer
 	int response_buffer_size;//响应报文buffer大小

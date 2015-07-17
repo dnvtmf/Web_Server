@@ -11,6 +11,10 @@
 #include <Windows.h>
 #include <string>
 #include <stdlib.h>
+#include <time.h>
+#include <sys/stat.h>
+#include <errno.h>
 
 #include "Server.h"
 #include "TCPconnect.h"
+#include "FileServer.h"
